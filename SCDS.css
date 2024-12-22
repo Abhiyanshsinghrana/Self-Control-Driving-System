@@ -1,0 +1,188 @@
+/* General Body Styles */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f7f6;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+.navbar .navbar-brand {
+    font-size: 1.8rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar .navbar-nav {
+    list-style: none;
+    margin-top: 10px;
+}
+
+.navbar .navbar-nav li {
+    display: inline;
+    margin: 0 20px;
+}
+
+.navbar .navbar-nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.2rem;
+    padding: 10px;
+}
+
+.navbar .navbar-nav a:hover {
+    color: #ff6f61;
+}
+
+/* Header Section */
+.header {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #333;
+}
+
+.header p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Feature Cards */
+.container {
+    width: 80%;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.card {
+    width: 30%;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card-header {
+    background-color: #ff6f61;
+    color: white;
+    padding: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-body i {
+    font-size: 4rem;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.card-body p {
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.btn-custom {
+    background-color: #ff6f61;
+    color: white;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.btn-custom:hover {
+    background-color: #d75c53;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 15px;
+    text-align: center;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* System Control Panel */
+.control-panel {
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 40px;
+    text-align: center;
+}
+
+.control-panel h4 {
+    font-size: 1.6rem;
+    margin-bottom: 15px;
+}
+
+.control-panel .status {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #4caf50;
+}
+
+/* Icons and Features */
+.icon-container {
+    font-size: 4rem;
+    color: #ff6f61;
+    margin-bottom: 20px;
+}
+
+.feature-icon {
+    font-size: 3rem;
+    color: #333;
+    margin-right: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container {
+        width: 90%;
+    }
+}
